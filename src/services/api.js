@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ✅ API Base URL (Now Using Localhost for Local Testing)
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: process.env.REACT_APP_API_URL || "http://15.235.185.142:5000/api",
 });
 
 // ✅ Fetch all blogs

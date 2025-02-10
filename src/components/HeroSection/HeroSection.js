@@ -32,7 +32,7 @@ const HeroSection = () => {
         <div className="hero-content">
           <Link to={`/blog/${featuredBlog._id}`} className="hero-image-wrapper">
             <img
-              src={`http://localhost:5000${featuredBlog.mainPicture}`}
+              src={`http://15.235.185.142:5000${featuredBlog.mainPicture}`}
               alt={featuredBlog.title}
               className="hero-image"
               onError={(e) => {

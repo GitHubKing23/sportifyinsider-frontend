@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // ✅ API Base URL (Now Using Localhost for Local Testing)
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api/analytics"; 
+const API_URL = process.env.REACT_APP_API_URL || "http://15.235.185.142:5000/api/analytics"; 
 
 // ✅ Track Page Visit
 export const trackVisit = async (page) => {
