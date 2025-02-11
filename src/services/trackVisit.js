@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const trackVisit = async (page) => {
     try {
-        await axios.post('http://localhost:5000/api/analytics/track-visit', {
+        await axios.post('http:// 15.235.185.142:5000/api/analytics/track-visit', {
             page,
             referrer: document.referrer,
             userAgent: navigator.userAgent,
@@ -15,7 +15,7 @@ export const trackVisit = async (page) => {
 
 export const trackTimeSpent = async (page, timeSpent) => {
     try {
-        await axios.post('http://localhost:5000/api/analytics/track-time', { page, timeSpent });
+        await axios.post('http:// 15.235.185.142:5000/api/analytics/track-time', { page, timeSpent });
     } catch (error) {
         console.error('Error tracking time spent:', error);
     }
@@ -23,7 +23,7 @@ export const trackTimeSpent = async (page, timeSpent) => {
 
 export const trackClick = async (page, clickedElement) => {
     try {
-        await axios.post('http://localhost:5000/api/analytics/track-click', { page, clickedElement });
+        await axios.post('http:// 15.235.185.142:5000/api/analytics/track-click', { page, clickedElement });
     } catch (error) {
         console.error('Error tracking click:', error);
     }

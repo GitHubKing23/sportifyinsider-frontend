@@ -35,9 +35,9 @@ const BlogDetails = () => {
           {/* ✅ Open Graph Meta Tags (for Social Media) */}
           <meta property="og:title" content={blog.title} />
           <meta property="og:description" content={blog.content.substring(0, 150) + "..."} />
-          <meta property="og:image" content={`http://localhost:5000${blog.mainPicture}`} />
+          <meta property="og:image" content={`http://15.235.185.142:5000${blog.mainPicture}`} />
           <meta property="og:type" content="article" />
-          <meta property="og:url" content={`http://localhost:3000/blog/${id}`} />
+          <meta property="og:url" content={`http://15.235.185.142:5000/blog/${id}`} />
         </Helmet>
       )}
 
